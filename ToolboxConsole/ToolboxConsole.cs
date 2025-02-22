@@ -6,11 +6,12 @@ using DerRobert28.DotnetToolbox.Extensions;
 
 #endregion
 
-internal class ToolboxConsole {
-
+internal class ToolboxConsole
+{
 	#region Main Method
 
-	public static void Main() {
+	public static void Main()
+	{
 		int?	x = null;
 		//
 		Console.WriteLine(x.asString());

@@ -14,8 +14,8 @@ public static class NullableExtension
 	public static bool isNull<T>([NotNullWhen(false)] this T? value)
 		=> value is null;
 
-	public static string toNullableString<T>(this T? value)
-		=> value.whenNull("null", $"{value}");
+	public static string toString<T>(this T? value)
+		=> value?.ToString() ?? "null";
 
 	public static T? whenNotNull<T>([NotNullWhen(true)] this T? first, T second)
 		=> first.isNotNull()? first: second;
