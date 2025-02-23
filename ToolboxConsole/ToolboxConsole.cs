@@ -12,7 +12,7 @@ internal class ToolboxConsole
 
 	public static void Main()
 	{
-		int?	x = null;
+		int? x = null;
 		//
 		Console.WriteLine(x.asString());
 		Console.WriteLine(x.toString());
